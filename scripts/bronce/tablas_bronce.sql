@@ -1,7 +1,7 @@
 -- Acorde a la nomenclatura especificada
 
--- Carga de información en clientes de CRM
-CREATE TABLE bronze.crm_info_cliente (
+-- Carga de informació n en clientes de CRM
+CREATE TABLE bronze.crm_cust_info (
     cst_id INT,
     cst_key NVARCHAR(50),
     cst_firstname NVARCHAR(50),
@@ -12,7 +12,7 @@ CREATE TABLE bronze.crm_info_cliente (
 );
 
 -- Carga de información de productos de CRM
-CREATE TABLE bronze.crm_info_prod (
+CREATE TABLE bronze.crm_prd_info (
     prd_id INT,
     prd_key NVARCHAR(50),
     prd_nm NVARCHAR(50),
@@ -23,7 +23,7 @@ CREATE TABLE bronze.crm_info_prod (
 );
 
 -- Carga de información de ventas de CRM
-CREATE TABLE bronze.crm_detalles_ventas (
+CREATE TABLE bronze.crm_sales_details (
     sls_ord_num NVARCHAR(50),
     sls_prd_key NVARCHAR(50),
     sls_cust_id INT,
